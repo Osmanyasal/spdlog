@@ -23,5 +23,3 @@ echo "${CSPDLOG} build folder created"
 cd build
 cmake .. && make -j
 echo "${CSPDLOG} cmake executed" 
-cd build
-make
