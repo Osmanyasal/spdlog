@@ -23,3 +23,8 @@ echo "${CSPDLOG} build folder created"
 cd build
 cmake .. && make -j
 echo "${CSPDLOG} cmake executed" 
+
+
+#sudo find ./ -type f -name "*.h*" -exec cp {} "/usr/local/include/" \;
+sudo cp -R ./include/spdlog /usr/local/include/
+sudo cp ./build/libspdlog.a /usr/local/lib
